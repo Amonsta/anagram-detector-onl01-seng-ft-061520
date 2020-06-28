@@ -11,12 +11,15 @@ class Anagram
     @word = word
   end 
   
-  def match
+  def match(array)
     #iteration
     #possible_anagrams = []
     #returns all matches ==  []
   #||
     #no_matches = just an empty array 
+    
+    array.select do |i|
+      @word.split("").sort == i.split("").sort
   end
   
 end 
